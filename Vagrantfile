@@ -82,10 +82,10 @@ Vagrant.configure(2) do |config|
       curl -O http://static.imply.io/quickstart/kafka-wikiticker.tar.gz
       tar -xzf kafka-wikiticker.tar.gz
       cd imply-1.2.1
-      bin/supervise -c ../kafka-wikiticker/conf/quickstart.conf
+      # bin/supervise -c ../kafka-wikiticker/conf/quickstart.conf
       curl -O http://packages.confluent.io/archive/3.0/confluent-3.0.0-2.11.tar.gz
       tar -xzf confluent-3.0.0-2.11.tar.gz
       cd confluent-3.0.0
-      ./bin/kafka-server-start ./etc/kafka/server.properties
+      # ./bin/kafka-server-start ./etc/kafka/server.properties
   SHELL
 end
