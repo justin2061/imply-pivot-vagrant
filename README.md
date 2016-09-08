@@ -17,14 +17,16 @@ When the vm has finished, open 2 terminals and ssh into the vm to start druid an
 
 Terminal 1 (druid)
 > cd imply-1.2.1
+
 > bin/supervise -c ../kafka-wikiticker/conf/quickstart.conf
 
 Terminal 2 (kafka) 
 > cd confluent-3.0.0
+
 > ./bin/kafka-server-start ./etc/kafka/server.properties
 
 In a browser go to 
-http://localhost:9095/pivot#wikipedia
+> http://localhost:9095/pivot#wikipedia
 
 > vagrant halt - stops the vm instance
 
