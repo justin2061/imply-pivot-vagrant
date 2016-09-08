@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install -y apache2
-if ! [ -L /var/www ]; then
-  rm -rf /var/www
-  ln -fs /vagrant /var/www
-fi
-
+sudo apt-get install software-properties-common
+sudo apt-get install -y curl
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+sudo apt-get install openjdk-7-jre-headless -y
