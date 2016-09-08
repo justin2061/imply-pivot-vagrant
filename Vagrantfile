@@ -45,13 +45,13 @@ Vagrant.configure(2) do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-   config.vm.provider "virtualbox" do |vb|
+  # config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-     vb.memory = "1024"
-   end
+  #   vb.memory = "1024"
+  # end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -67,6 +67,10 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+      sudo dd if=/dev/zero of=/root/myswapfile bs=1M count=3072
+      sudo chmod 600 /root/myswapfile
+      sudo mkswap /root/myswapfile
+      sudo swapon /root/myswapfile
       apt-get update
       sudo apt-get install software-properties-common
       sudo apt-get install -y curl
