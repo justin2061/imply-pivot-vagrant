@@ -16,3 +16,6 @@ Commands
 
 > vagrant destroy - tears down and removes downloaded files
 
+This demo was made following this guide
+
+> http://www.confluent.io/blog/building-a-streaming-analytics-stack-with-apache-kafka-and-druid/
