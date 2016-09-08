@@ -27,7 +27,8 @@ Terminal 2 (kafka)
 
 In a browser go to 
 > http://localhost:9095/pivot#wikipedia
-
+	
+Commands cont.
 > vagrant halt - stops the vm instance
 
 > vagrant destroy - tears down and removes downloaded files
