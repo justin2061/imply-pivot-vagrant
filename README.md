@@ -1,8 +1,9 @@
 # imply-pivot-vagrant 
 
-Vagrant demo project for imply-pivot
+Vagrant demo project for imply-pivot made by following this guide
 
-> https://github.com/implydata/imply-pivot
+> http://www.confluent.io/blog/building-a-streaming-analytics-stack-with-apache-kafka-and-druid/
+
 
 Prereqs
 > Vagrant https://www.vagrantup.com/downloads.html
@@ -33,6 +34,3 @@ Commands cont.
 
 > vagrant destroy - tears down and removes downloaded files
 
-This demo was made following this guide
-
-> http://www.confluent.io/blog/building-a-streaming-analytics-stack-with-apache-kafka-and-druid/
