@@ -70,7 +70,7 @@ Vagrant.configure(2) do |config|
       apt-get update
       sudo apt-get install software-properties-common
       sudo apt-get install -y curl
-      curl -sL https://deb.nodesource.com/setup | sudo bash -
+      curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
       sudo apt-get install -y nodejs
       sudo apt-get install openjdk-7-jre-headless -y
       curl -O http://static.imply.io/release/imply-1.2.1.tar.gz
